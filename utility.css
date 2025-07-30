@@ -20,6 +20,10 @@
     color: white;
 }
 
+.bg-white{
+    font: 1em sans-serif;
+}
+
 .invert{
     filter: invert(1);
 }
@@ -29,59 +33,38 @@
 }
 
 .rounded{
-    border-radius: 7px;;
+    border-radius: 8px;
 }
 
 .m-1{
-    margin: 5px;
+    margin: 8px;
 }
 
 .p-1{
-    padding: 10px;
+    padding: 16px;
 }
 
-/* General scrollbar styling */
+/* Custom scrollbar styling for Spotify-like appearance */
 ::-webkit-scrollbar {
-    width: 12px; /* Width of the scrollbar */
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: #2c2c2c; /* Track background color */
-    border-radius: 8px; /* Round the corners of the scrollbar track */
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: #555; /* Scrollbar handle color */
-    border-radius: 8px; /* Round the corners of the scrollbar handle */
-    transition: background 0.3s; /* Smooth transition for hover effect */
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background: #888; /* Scrollbar handle color on hover */
-  }
-  
-  /* Firefox scrollbar styling */
-  * {
-    scrollbar-width: thin; /* Thin scrollbar */
-    scrollbar-color: #555 #2c2c2c; /* Scrollbar handle and track color */
-  }
-  
-  /* For Edge and Internet Explorer */
-  ::-ms-scrollbar {
-    width: 12px; /* Width of the scrollbar */
-  }
-  
-  ::-ms-scrollbar-track {
-    background: #2c2c2c; /* Track background color */
-    border-radius: 8px; /* Round the corners of the scrollbar track */
-  }
-  
-  ::-ms-scrollbar-thumb {
-    background: #555; /* Scrollbar handle color */
-    border-radius: 8px; /* Round the corners of the scrollbar handle */
-  }
-  
-  ::-ms-scrollbar-thumb:hover {
-    background: #888; /* Scrollbar handle color on hover */
-  }
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* Firefox scrollbar styling */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+}
   

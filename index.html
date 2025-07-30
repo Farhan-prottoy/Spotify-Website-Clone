@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="utility.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <title>Spotify - Web Player: Music for everyone</title>
   </head>
   <body>
@@ -38,6 +39,7 @@
           </div>
           <div class="songList">
             <ul>
+              
             </ul>
           </div>
           <div class="footer">
@@ -78,82 +80,169 @@
       <div class="right bg-grey rounded">
         <div class="header">
           <div class="nav">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              width="24"
-              height="24"
-              color="#ffffff"
-              fill="none"
-            >
-              <path
-                d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              width="24"
-              height="24"
-              color="#ffffff"
-              fill="none"
-            >
-              <path
-                d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+            <button class="nav-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                color="#ffffff"
+                fill="none"
+                class="nav-icon"
+              >
+                <path
+                  d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <button class="nav-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                color="#ffffff"
+                fill="none"
+                class="nav-icon"
+              >
+                <path
+                  d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
           </div>
           <div class="buttons">
-            <button class="signupbtn">Sign up</button>
-            <button class="loginbtn">Log in</button>
+            <button class="signupbtn" title="Create an account">Sign up</button>
+            <button class="loginbtn" title="Log in to Spotify">Log in</button>
           </div>
         </div>
         <div class="spotifyPlaylists">
           <h1>Spotify playlist</h1>
           <div class="cardContainer">
             <div class="card">
-              <div class="play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
-                <circle cx="12" cy="12" r="10" fill="#1DB954"/>
-                <path d="M9 16.2l7.8-4.2-7.8-4.2v8.4z" fill="#000000"/>
-              </svg>
+              <div class="play">
+                <button class="play-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
+                    <circle cx="12" cy="12" r="12" fill="#1DB954"/>
+                    <path d="M9 16.2l7.8-4.2-7.8-4.2v8.4z" fill="#000000"/>
+                  </svg>
+                </button>
               </div>
               <img
-                src="https://i.scdn.co/image/ab67706f00000002b55b6074da1d43715fc16d6d"
-                alt="Picture of the song"
+                src="https://i.scdn.co/image/ab67616d00001e02781faf59a3cb980fe3b493f8"
+                alt="Dhun (From Saiyaara)"
               />
-              <h2>Happy Hits!</h2>
-              <p>Hits to boost your mood and fill you with happiness</p>
+              <h2>Dhun (From Saiyaara)</h2>
+              <p>Mithoon, Arijit Singh</p>
             </div>
+
+
             <div class="card">
-              <div class="play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
-                <circle cx="12" cy="12" r="10" fill="#1DB954"/>
-                <path d="M10 16.5V7.5l6 4.5-6 4.5z" fill="#000000"/>
-              </svg>
+              <div class="play">
+                <button class="play-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
+                    <circle cx="12" cy="12" r="12" fill="#1DB954"/>
+                    <path d="M10 16.5V7.5l6 4.5-6 4.5z" fill="#000000"/>
+                  </svg>
+                </button>
               </div>
               <img
-                src="https://i.scdn.co/image/ab67706f00000002b55b6074da1d43715fc16d6d"
-                alt="Picture of the song"
+                src="https://i.scdn.co/image/ab67616d00001e0240a45ca092aef8011606ea27"
+                alt=""
               />
-              <h2>Happy Hits!</h2>
-              <p>Hits to boost your mood and fill you with happiness</p>
+              <h2>Sapphire (feat. Arijit Singh)</h2>
+              <p>Ed Sheeran, </p>
+            </div>
+
+          
+            <div class="card">
+              <div class="play">
+                <button class="play-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
+                    <circle cx="12" cy="12" r="12" fill="#1DB954"/>
+                    <path d="M10 16.5V7.5l6 4.5-6 4.5z" fill="#000000"/>
+                  </svg>
+                </button>
+              </div>
+              <img
+                src="https://i.scdn.co/image/ab67616d00001e0240a45ca092aef8011606ea27"
+                alt=""
+              />
+              <h2>Sapphire (feat. Arijit Singh)</h2>
+              <p>Ed Sheeran, </p>
+            </div>
+
+            <div class="card">
+              <div class="play">
+                <button class="play-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
+                    <circle cx="12" cy="12" r="12" fill="#1DB954"/>
+                    <path d="M9 16.2l7.8-4.2-7.8-4.2v8.4z" fill="#000000"/>
+                  </svg>
+                </button>
+              </div>
+              <img
+                src="https://i.scdn.co/image/ab67616d00001e02781faf59a3cb980fe3b493f8"
+                alt="Dhun (From Saiyaara)"
+              />
+              <h2>Dhun (From Saiyaara)</h2>
+              <p>Mithoon, Arijit Singh</p>
             </div>
           </div>
-          <div class="playbar">
-            <div class="songinfo"></div>
-            <div class="songbutton">
-              <img src="Images/svg format/prevsong.svg" alt="">
-              <img src="Images/svg format/play.svg" alt="">
-              <img src="Images/svg format/nextsong.svg" alt="">
+        </div>
+        
+        <!-- Bottom Player Bar -->
+        <div class="playbar">
+          <div class="songinfo">
+            <img id="currentSongImg" src="" alt="Current Song">
+            <div class="songDetails">
+              <div id="currentSongName">Choose a song</div>
+              <div id="currentArtist">Unknown Artist</div>
             </div>
-            <div class="songtime"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" fill="white" class="heart-icon">
+              <path d="M8 14.25l-.345-.666a4.67 4.67 0 0 1-.644-1.041A7.32 7.32 0 0 1 6.6 10.5c-.35-1.1-.6-2.2-.6-3.25C6 5.95 6.95 5 8.25 5S10.5 5.95 10.5 7.25c0 1.05-.25 2.15-.6 3.25a7.32 7.32 0 0 1-.411 2.043c-.188.4-.406.763-.644 1.041L8 14.25z"/>
+            </svg>
+          </div>
+          
+          <div class="playerControls">
+            <div class="songbutton">
+              <svg id="shuffleBtn" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="control-icon" viewBox="0 0 16 16" title="Enable shuffle">
+                <path fill-rule="evenodd" d="M0 3.5A.5.5 0 0 1 .5 3H1c2.202 0 3.827 1.24 4.874 2.418.49.552.865 1.102 1.126 1.532.26-.43.636-.98 1.126-1.532C9.173 4.24 10.798 3 13 3v1c-1.798 0-3.173 1.01-4.126 2.082A9.624 9.624 0 0 0 7.556 8a9.624 9.624 0 0 0 1.317 1.918C9.828 10.99 11.204 12 13 12v1c-2.202 0-3.827-1.24-4.874-2.418A10.595 10.595 0 0 1 7 9.05c-.26.43-.636.98-1.126 1.532C4.827 11.76 3.202 13 1 13H.5a.5.5 0 0 1 0-1H1c1.798 0 3.173-1.01 4.126-2.082A9.624 9.624 0 0 0 6.444 8a9.624 9.624 0 0 0-1.317-1.918C4.172 5.01 2.796 4 1 4H.5a.5.5 0 0 1-.5-.5z"/>
+                <path d="M13 5.466V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192zm0 9v-3.932a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192z"/>
+              </svg>
+              <img id="prevSong" src="Images/svg format/prevsong.svg" alt="Previous" title="Previous">
+              <img id="playPause" src="Images/svg format/play.svg" alt="Play/Pause" class="play-button" title="Play">
+              <img id="nextSong" src="Images/svg format/nextsong.svg" alt="Next" title="Next">
+              <svg id="repeatBtn" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="control-icon" viewBox="0 0 16 16" title="Enable repeat">
+                <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/>
+                <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/>
+              </svg>
+            </div>
+            <div class="progressContainer">
+              <span id="currentTime">0:00</span>
+              <div class="progressBar">
+                <div class="progress"></div>
+              </div>
+              <span id="totalTime">0:00</span>
+            </div>
+          </div>
+          
+          <div class="volumeControls">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" fill="white" title="Volume">
+              <path d="M9.741.85a.8.8 0 0 1 1.25.65v12.937a.8.8 0 0 1-1.25.65L5.176 12H2.28c-.43 0-.78-.35-.78-.78V4.72c0-.43.35-.78.78-.78h2.896L9.74.85z"/>
+              <path d="M11.552 3.267a.8.8 0 1 1 1.096 1.166 8.99 8.99 0 0 1 0 6.134.8.8 0 1 1-1.096 1.166 10.59 10.59 0 0 0 0-8.466z"/>
+            </svg>
+            <div class="volumeBar" title="Adjust volume">
+              <div class="volumeProgress"></div>
+            </div>
           </div>
         </div>
       </div>
