@@ -1,0 +1,92 @@
+[
+  {
+    "id": "song-1",
+    "title": "Ahare",
+    "artist": "Minar",
+    "album": "Fusion Singles",
+    "duration": 225,
+    "audioUrl": "http://localhost:5000/media/songs/Ahare-Minar_FusionBD.Com.mp3",
+    "coverUrl": "https://i.scdn.co/image/ab67616d00001e02781faf59a3cb980fe3b493f8"
+  },
+  {
+    "id": "song-2",
+    "title": "Chaite Paro 2008",
+    "artist": "Unknown Artist",
+    "album": "Bangla Collection",
+    "duration": 240,
+    "audioUrl": "http://localhost:5000/media/songs/Chaite%20Paro%202008.mp3",
+    "coverUrl": "https://i.scdn.co/image/ab67616d00001e0240a45ca092aef8011606ea27"
+  },
+  {
+    "id": "song-3",
+    "title": "Ei Bidaye",
+    "artist": "Unknown Artist",
+    "album": "Bangla Collection",
+    "duration": 230,
+    "audioUrl": "http://localhost:5000/media/songs/Ei%20Bidaye.mp3",
+    "coverUrl": "https://i.scdn.co/image/ab67616d00001e0240a45ca092aef8011606ea27"
+  },
+  {
+    "id": "song-4",
+    "title": "Kaabil Hoon",
+    "artist": "Jubin Nautiyal",
+    "album": "Kaabil",
+    "duration": 250,
+    "audioUrl": "http://localhost:5000/media/songs/Kaabil_Hoon-Kaabil_FusionBD.Com.mp3",
+    "coverUrl": "https://i.scdn.co/image/ab67616d00001e02781faf59a3cb980fe3b493f8"
+  },
+  {
+    "id": "song-5",
+    "title": "Ke Tumi",
+    "artist": "Tahsan",
+    "album": "Bangla Collection",
+    "duration": 215,
+    "audioUrl": "http://localhost:5000/media/songs/Ke_Tumi-Tahsan_FusionBD.Com.mp3",
+    "coverUrl": "https://i.scdn.co/image/ab67616d00001e0240a45ca092aef8011606ea27"
+  },
+  {
+    "id": "song-6",
+    "title": "Lost In The Echo",
+    "artist": "Linkin Park",
+    "album": "LIVING THINGS",
+    "duration": 230,
+    "audioUrl": "http://localhost:5000/media/songs/Lost%20In%20The%20Echo.mp3",
+    "coverUrl": "https://i.scdn.co/image/ab67616d00001e02781faf59a3cb980fe3b493f8"
+  },
+  {
+    "id": "song-7",
+    "title": "Love You Zindagi",
+    "artist": "Jasleen Royal",
+    "album": "Dear Zindagi",
+    "duration": 213,
+    "audioUrl": "http://localhost:5000/media/songs/Love_You_Zindagi-Dear_Zindagi_FusionBD.Com.mp3",
+    "coverUrl": "https://i.scdn.co/image/ab67616d00001e0240a45ca092aef8011606ea27"
+  },
+  {
+    "id": "song-8",
+    "title": "Despacito",
+    "artist": "Luis Fonsi, Daddy Yankee",
+    "album": "Vida",
+    "duration": 229,
+    "audioUrl": "http://localhost:5000/media/songs/Luis%20Fonsi_%20Daddy%20Yankee%20-%20Despacito%20ft.%20Justin%20Bieber.mp3",
+    "coverUrl": "https://i.scdn.co/image/ab67616d00001e02781faf59a3cb980fe3b493f8"
+  },
+  {
+    "id": "song-9",
+    "title": "Pehli Mohabbat",
+    "artist": "Darshan Raval",
+    "album": "Romantic Hits",
+    "duration": 248,
+    "audioUrl": "http://localhost:5000/media/songs/Pehli%20Mohabbat%20(Darshan%20Raval)%20Full%20Song(honeysingh.co).mp3",
+    "coverUrl": "https://i.scdn.co/image/ab67616d00001e0240a45ca092aef8011606ea27"
+  },
+  {
+    "id": "song-10",
+    "title": "Jonmodin",
+    "artist": "Rafa ft. Topu",
+    "album": "Bangla Collection",
+    "duration": 238,
+    "audioUrl": "http://localhost:5000/media/songs/Rafa%20ft.%20Topu%20-%20Jonmodin%20(music.com.bd).mp3",
+    "coverUrl": "https://i.scdn.co/image/ab67616d00001e02781faf59a3cb980fe3b493f8"
+  }
+]

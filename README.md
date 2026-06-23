@@ -1,105 +1,106 @@
-# Spotify Website Clone
+# Spotify Clone Pro (React + Express)
 
-A pixel-perfect recreation of the Spotify web interface built with HTML, CSS, and JavaScript.
+This project was upgraded from a static HTML/CSS/JS clone into a scalable full-stack architecture.
 
-## Features
-
-- **Authentic Spotify Design**: Matches the exact look and feel of Spotify's web interface
-- **Responsive Layout**: Clean, modern design that works across different screen sizes
-- **Music Player**: Fully functional audio player with play/pause, next/previous controls
-- **Progress Bar**: Interactive progress bar with time display
-- **Volume Control**: Adjustable volume slider
-- **Song Library**: Browse and play songs from your local collection
-- **Playlist Cards**: Interactive playlist cards with hover effects
-- **Smooth Animations**: CSS transitions and hover effects for a polished experience
-
-## File Structure
+## New Architecture
 
 ```
-├── index.html          # Main HTML file
-├── style.css           # Main stylesheet
-├── utility.css         # Utility classes
-├── script.js           # JavaScript functionality
-├── start-server.bat    # Windows batch file to start local server
-├── Images/
-│   └── svg format/     # SVG icons (home, search, play, etc.)
-└── Songs/              # Your MP3 files go here
+.
+├── frontend/                 # React (Vite) app
+│   ├── src/
+│   │   ├── components/       # Reusable UI blocks
+│   │   ├── context/          # Global player state (Context API)
+│   │   └── hooks/            # Keyboard shortcuts hook
+├── backend/                  # Node.js + Express API
+│   └── src/
+│       ├── routes/           # /api endpoints
+│       └── data/             # songs.json seed data
+├── Songs/                    # Local mp3 files (served by backend)
+└── legacy files              # Existing static prototype kept for reference
 ```
 
-## How to Run
+## Implemented (Phase 1 → Phase 5 core)
 
-### Option 1: Using Python (Recommended)
-1. Make sure Python is installed on your system
-2. Double-click `start-server.bat` (Windows) or run:
-   ```bash
-   python -m http.server 8000
-   ```
-3. Open your browser and go to: `http://localhost:8000`
+### Phase 1: UI/UX
 
-### Option 2: Using VS Code Live Server
-1. Install the "Live Server" extension in VS Code
-2. Right-click on `index.html` and select "Open with Live Server"
+- Spotify-style layout: sidebar + main + bottom player
+- Responsive behavior (desktop/tablet/mobile)
+- Hover transitions and smooth interactions
+- Active/highlighted currently playing song
+- Album covers + metadata
 
-### Option 3: Using Node.js
-1. Install a simple HTTP server:
-   ```bash
-   npm install -g http-server
-   ```
-2. Run in the project directory:
-   ```bash
-   http-server
-   ```
+### Phase 2: Audio Player
 
-## Adding Your Music
+- Play/Pause
+- Next/Previous
+- Seek via progress range
+- Current time + duration
+- Volume slider
+- Shuffle mode
+- Repeat modes: off/all/one
+- Keyboard shortcut: Space to toggle play/pause
 
-1. Place your MP3 files in the `Songs/` folder
-2. The app will automatically detect and list them in the sidebar
-3. Click on any song to play it
+### Phase 3: State Management
 
-## Browser Compatibility
+- Global `PlayerContext` with:
+  - `currentSong`
+  - `isPlaying`
+  - `currentTime` / `duration`
+  - `volume`
+  - `shuffle` / `repeatMode`
 
-- Chrome (recommended)
-- Firefox
-- Safari
-- Edge
+### Phase 4: Data Management
 
-**Note**: Some browsers may require user interaction before playing audio due to autoplay policies.
+- Songs moved to backend JSON source
+- Express API endpoint: `GET /api/songs`
+- Frontend fetches songs dynamically
+- Audio files served from `/media/songs`
 
-## Technical Details
+### Phase 5: Advanced Features (initial)
 
-- **HTML5 Audio API**: For music playback
-- **CSS Grid & Flexbox**: For responsive layouts
-- **ES6+ JavaScript**: Modern JavaScript features
-- **CSS Custom Properties**: For consistent theming
-- **SVG Icons**: Scalable vector graphics for crisp icons
+- Likes/favorites persisted in `localStorage`
+- Playlist creation and add-to-playlist
+- Song search
+- Queue (up next)
+- Recently played
 
-## Customization
+## Setup
 
-You can easily customize the appearance by modifying:
-- `style.css`: Main styles and layout
-- `utility.css`: Utility classes for common styling
-- Colors, fonts, and spacing can be adjusted in the CSS variables
+### 1) Backend
 
-## Known Issues
+```bash
+cd backend
+npm install
+npm run dev
+```
 
-- Songs must be manually added to the `Songs/` folder
-- Album artwork uses placeholder images
-- Some advanced Spotify features are not implemented (search, user accounts, etc.)
+Server starts on `http://localhost:5000`.
 
-## Future Enhancements
+### 2) Frontend
 
-- Add search functionality
-- Implement playlist creation
-- Add shuffle and repeat modes
-- Include album artwork support
-- Add keyboard shortcuts
-- Implement user authentication
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
-## Contributing
+App starts on `http://localhost:5173`.
 
-Feel free to fork this project and submit pull requests for any improvements!
+## API
 
-## License
+- `GET /api/songs` → returns song list
+- `GET /media/songs/:filename` → serves mp3 files
+- `GET /health` → health check
 
-This project is for educational purposes only. Spotify and its interface design are trademarks of Spotify AB.
- Tried to clone the Spotify Website
+## Next High-Value Upgrades
+
+1. JWT auth + user model (MongoDB)
+2. Persist likes/playlists/recent on backend per user
+3. Real queue reordering
+4. Unit tests + integration tests
+5. Optional deployment with Docker + Render/Railway/Vercel
+
+## Notes
+
+- Existing legacy static files are still present to compare the old and new versions.
+- This project is for educational/portfolio use.

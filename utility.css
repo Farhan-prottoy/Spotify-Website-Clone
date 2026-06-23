@@ -44,7 +44,6 @@
     padding: 16px;
 }
 
-/* Custom scrollbar styling for Spotify-like appearance */
 ::-webkit-scrollbar {
     width: 8px;
 }
